@@ -11,6 +11,17 @@
 </head>
 
 <body>
+    <div class="toss">
+        <div class="head" onclick="toss(0)">Heads</div>
+        <div class="toss" onclick="toss(1)">Tails</div>
+    </div>
+    <div id="select">
+        <div class="choose_batting" onclick="decide(0)">Batting</div>
+        <div class="choose_bowling" onclick="decide(1)">Bowling</div>
+    </div>
+    <div id="computer_bat"></div>
+
+    <div class="decision"></div>
 
     <div class="input">
         <div id="1" onclick="batting(1)">1</div>
@@ -20,8 +31,14 @@
         <div id="5" onclick="batting(5)">5</div>
         <div id="6" onclick="batting(6)">6</div>
     </div>
+    <div id="score_display">score : 0</div>
+    <div id="batting_display">batting : 0</div>
+    <div id="bowling_display">bowling : 0</div>
 
-    <script src="index.js"></script>
+    
+    <script src="index.js">
+
+    </script>
 </body>
 
 </html>
