@@ -11,31 +11,35 @@
 </head>
 
 <body>
+    <h1>Choose Heads or Tail to Begin</h1>
     <div class="toss">
         <div class="head" onclick="toss(0)">Heads</div>
-        <div class="toss" onclick="toss(1)">Tails</div>
+        <div class="tail" onclick="toss(1)">Tails</div>
     </div>
     <div id="select">
         <div class="choose_batting" onclick="decide(0)">Batting</div>
         <div class="choose_bowling" onclick="decide(1)">Bowling</div>
     </div>
-    <div id="computer_bat"></div>
-
-    <div class="decision"></div>
-
     <div class="input">
-        <div id="1" onclick="batting(1)">1</div>
-        <div id="2" onclick="batting(2)">2</div>
-        <div id="3" onclick="batting(3)">3</div>
-        <div id="4" onclick="batting(4)">4</div>
-        <div id="5" onclick="batting(5)">5</div>
-        <div id="6" onclick="batting(6)">6</div>
+        <button id="1" onclick="batting(1)"><img src="1.jpg" alt=""></button>
+        <button id="2" onclick="batting(2)"><img src="2.jpg" alt=""></button>
+        <button id="3" onclick="batting(3)"><img src="3.jpg" alt=""></button>
+        <button id="4" onclick="batting(4)"><img src="4.jpg" alt=""></button>
+        <button id="5" onclick="batting(5)"><img src="5.jpg" alt=""></button>
+        <button id="6" onclick="batting(6)"><img src="6.jpg" alt=""></button>
     </div>
-    <div id="score_display">score : 0</div>
-    <div id="batting_display">batting : 0</div>
-    <div id="bowling_display">bowling : 0</div>
 
-    
+    <div class="display">
+        <div id="score_display">score : 0</div>
+        <div id="batting_display">run : 0</div>
+        <div id="bowling_display">bowling : 0</div>
+    </div>
+    <div class="commentry">
+        <div id="decision"></div>
+        <div id="computer_bat"></div>
+        <div id="target"></div>
+        <div id="win_lose"></div>
+    </div>
     <script src="index.js">
 
     </script>
